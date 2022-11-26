@@ -14,5 +14,21 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <script>
+        const body = document.querySelector('body');
+        body.addEventListener('click', () => {
+          createArticle()
+        })
+      function createArticle(){
+      for(let i = 0; i < 5; i++){
+     const article = document.createElement('article')
+     article.classList.add('message')
+     article.textContent = 'Message'
+     body.appendChild(article)
+     console.log('click');
+     
+    }
+    }
+    </script>
   </body>
 </html>
